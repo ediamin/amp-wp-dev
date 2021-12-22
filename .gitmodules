@@ -1,0 +1,4 @@
+[submodule "amp"]
+	path = amp-wp
+	url = https://github.com/ampproject/amp-wp.git
+	branch = develop
