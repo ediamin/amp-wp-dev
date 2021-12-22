@@ -2,3 +2,7 @@
 	path = amp-wp
 	url = https://github.com/ampproject/amp-wp.git
 	branch = develop
+[submodule "wordpress"]
+	path = wordpress-develop
+	url = https://github.com/WordPress/wordpress-develop.git
+	branch = trunk
