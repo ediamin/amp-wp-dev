@@ -1,10 +1,17 @@
 {
   "name": "@ediamin/amp-wp-dev",
   "version": "1.0.0",
-  "description": "",
+  "description": "Development environment for amp-wp plugin",
   "scripts": {
+      "npm-installs": "concurrently npm:npm-install:*",
+      "npm-install:amp": "cd amp-wp && npm ci && npm run build:dev",
+      "npm-install:wp": "cd wordpress-develop && npm ci && npm run build"
   },
   "keywords": [],
   "author": "Edi Amin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/env": "^4.1.3",
+    "concurrently": "^6.5.1"
+  }
 }
