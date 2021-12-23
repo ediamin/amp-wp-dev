@@ -2,7 +2,9 @@
     "core": "./wordpress-develop/build",
     "phpVersion": "7.2",
     "mappings": {
-        "wp-content/plugins/amp": "./amp-wp"
+        "wp-content/plugins/amp": "./amp-wp",
+        "../tests/phpunit": "./wordpress-develop/tests/phpunit",
+        "../wp-tests-config.php": "./wordpress-develop/wp-tests-config.php"
     },
     "plugins": [
         "https://downloads.wordpress.org/plugin/gutenberg.12.2.0.zip",

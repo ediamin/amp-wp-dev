@@ -7,7 +7,9 @@
       "stop": "wp-env stop",
       "install": "concurrently npm:install:*",
       "install:amp": "cd amp-wp && npm ci && npm run build:dev",
-      "install:wp": "cd wordpress-develop && npm ci && npm run build"
+      "install:wp": "cd wordpress-develop && npm ci && npm run build",
+      "cmd": "wp-env run tests-cli",
+      "phpunit": "wp-env run tests-cli './wp-content/plugins/amp/vendor/bin/phpunit -c /var/www/html/wp-content/plugins/amp/phpunit.xml.dist $npm_config_args'"
   },
   "keywords": [],
   "author": "Edi Amin",
