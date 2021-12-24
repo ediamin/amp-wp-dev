@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "amp/build": true,
+        "wordpress-develop/src": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "amp/build": true,
+        "wordpress-develop/src": true
+    }
+}

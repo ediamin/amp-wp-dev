@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Development environment for amp-wp plugin",
   "scripts": {
+      "install": "concurrently npm:install:*",
+      "install:amp": "cd amp && npm ci && npm run build:dev && composer install",
+      "install:wp": "cd wordpress-develop && npm ci && npm run build",
       "start": "wp-env start --xdebug",
       "stop": "wp-env stop",
-      "install": "concurrently npm:install:*",
-      "install:amp": "cd amp-wp && npm ci && npm run build:dev",
-      "install:wp": "cd wordpress-develop && npm ci && npm run build",
-      "cmd": "wp-env run tests-cli",
-      "phpunit": "wp-env run tests-cli './wp-content/plugins/amp/vendor/bin/phpunit -c /var/www/html/wp-content/plugins/amp/phpunit.xml.dist $npm_config_args'"
+      "env": "wp-env",
+      "phpunit": "wp-env run tests-wordpress './wp-content/plugins/amp/vendor/bin/phpunit -c /var/www/html/wp-content/plugins/amp/phpunit.xml.dist $npm_config_args'"
   },
   "keywords": [],
   "author": "Edi Amin",

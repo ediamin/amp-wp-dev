@@ -1,8 +1,8 @@
-[submodule "amp"]
-	path = amp-wp
-	url = https://github.com/ampproject/amp-wp.git
-	branch = develop
-[submodule "wordpress"]
+[submodule "wordpress-develop"]
 	path = wordpress-develop
 	url = https://github.com/WordPress/wordpress-develop.git
 	branch = trunk
+[submodule "amp"]
+	path = amp
+	url = https://github.com/ampproject/amp-wp.git
+	branch = develop

@@ -2,11 +2,11 @@
     "core": "./wordpress-develop/build",
     "phpVersion": "7.2",
     "mappings": {
-        "wp-content/plugins/amp": "./amp-wp",
-        "../tests/phpunit": "./wordpress-develop/tests/phpunit",
-        "../wp-tests-config.php": "./wordpress-develop/wp-tests-config.php"
+        "../wp-tests-config.php": "./wp-tests-config.php",
+        "../tests/phpunit": "./wordpress-develop/tests/phpunit"
     },
     "plugins": [
+        "./amp",
         "https://downloads.wordpress.org/plugin/gutenberg.12.2.0.zip",
         "https://downloads.wordpress.org/plugin/pwa.0.6.0.zip"
     ],
