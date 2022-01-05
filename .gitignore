@@ -1,3 +1,4 @@
 .DS_Store
+.wp-env.override.json
 node_modules
 wordpress-core
