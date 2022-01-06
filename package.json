@@ -9,7 +9,7 @@
         "start": "wp-env start --xdebug",
         "stop": "wp-env stop",
         "env": "wp-env",
-        "phpunit": "wp-env run tests-wordpress './wp-content/plugins/amp/vendor/bin/phpunit -c /var/www/html/wp-content/plugins/amp/phpunit.xml.dist $npm_config_args'"
+        "phpunit": "wp-env run tests-wordpress '/var/www/html/wp-content/plugins/amp/vendor/bin/phpunit -c /var/www/html/wp-content/plugins/amp/phpunit.xml.dist $npm_config_args'"
     },
     "keywords": [],
     "author": "Edi Amin",

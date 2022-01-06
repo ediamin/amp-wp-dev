@@ -2,3 +2,4 @@
 .wp-env.override.json
 node_modules
 wordpress-core
+.php.ini
